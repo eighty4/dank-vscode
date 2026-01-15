@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- ???
+
+## [v0.0.2] - 2026-01-15
+
 ### Added
 
 - Adding an Extension Marketplace icon
@@ -12,5 +16,6 @@
 
 - `Go To Definition` support for HTML partial paths to quickly navigate between HTML files
 
-[Unreleased]: https://github.com/eighty4/dank-vscode/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/eighty4/dank-vscode/compare/v0.0.2...HEAD
+[v0.0.2]: https://github.com/eighty4/dank-vscode/compare/v0.0.1...v0.0.2
 [v0.0.1]: https://github.com/eighty4/dank-vscode/releases/tag/v0.0.1
