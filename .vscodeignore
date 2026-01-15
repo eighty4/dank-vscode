@@ -1,0 +1,10 @@
+.vscode/**
+node_modules/**
+lib/**
+lib_js/*.map
+*.md
+.gitignore
+!CHANGELOG.md
+esbuild.js
+pnpm-lock.yaml
+tsconfig.json

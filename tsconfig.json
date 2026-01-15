@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "rootDir": "lib",
+        "noEmit": true,
+        "lib": ["ES2022"],
+        "target": "ES2022",
+        "module": "Node16",
+
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "allowImportingTsExtensions": true,
+        "rewriteRelativeImportExtensions": true,
+        "erasableSyntaxOnly": true,
+
+        /* Linting */
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        "verbatimModuleSyntax": true
+    }
+}

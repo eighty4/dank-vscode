@@ -1,0 +1,4 @@
+lib_js
+node_modules
+*.vsix
+
