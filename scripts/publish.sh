@@ -14,4 +14,5 @@ sed -i '' '3,6d' CHANGELOG.md
 vsce package
 vsce publish
 
+rm dank-vscode-*.vsix
 git restore CHANGELOG.md

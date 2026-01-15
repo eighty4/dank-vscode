@@ -1,9 +1,12 @@
-.vscode/**
-node_modules/**
-lib/**
-lib_js/*.map
-
+.github
+.vscode
+lib
+node_modules
 scripts
+
+docs/**
+!docs/icon-256.png
+lib_js/*.map
 
 .prettier*
 *.md
