@@ -9,6 +9,22 @@
     "license": "MIT",
     "type": "module",
     "description": "Support for DANK website development with @eighty4/dank",
+    "icon": "docs/icon-256.png",
+    "galleryBanner": {
+        "color": "#5e5",
+        "theme": "dark"
+    },
+    "keywords": [
+        "frontend",
+        "bundler",
+        "esbuild",
+        "dank",
+        "webdev",
+        "web",
+        "website",
+        "fullstack",
+        "cdn"
+    ],
     "packageManager": "pnpm@10.28.0",
     "engines": {
         "vscode": "^1.74.0"

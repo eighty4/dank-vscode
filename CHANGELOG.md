@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ???
+### Added
+
+- Adding an Extension Marketplace icon
 
 ## [v0.0.1] - 2026-01-15
 

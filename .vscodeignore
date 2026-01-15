@@ -2,9 +2,15 @@
 node_modules/**
 lib/**
 lib_js/*.map
+
+scripts
+
+.prettier*
 *.md
-.gitignore
 !CHANGELOG.md
+
+.gitignore
+ci_verify.sh
 esbuild.js
 pnpm-lock.yaml
 tsconfig.json
