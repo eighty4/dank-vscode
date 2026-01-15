@@ -12,7 +12,7 @@
     "icon": "docs/icon-256.png",
     "galleryBanner": {
         "color": "#5e5",
-        "theme": "dark"
+        "theme": "light"
     },
     "keywords": [
         "frontend",

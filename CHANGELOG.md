@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- ???
+### Fixed
+
+- Tweaking Extension Marketplace theme
 
 ## [v0.0.2] - 2026-01-15
 
