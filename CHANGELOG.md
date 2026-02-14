@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-- ???
+- `Go To Definition` support for Worker and SharedWorker URLs
 
 ## [v0.0.3] - 2026-01-15
 
