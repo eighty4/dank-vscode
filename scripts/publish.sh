@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# login with `vsce login eighty4tech`
+
 TAG=$(npm version patch --no-git-tag-version)
 
 npx -y @eighty4/changelog rollover "$TAG"
