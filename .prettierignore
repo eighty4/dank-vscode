@@ -1,1 +1,5 @@
+.vscode-test
+fixtures
+lib_js
+test_js
 pnpm-lock.yaml

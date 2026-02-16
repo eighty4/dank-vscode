@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "rootDir": "lib",
-        "noEmit": true,
+        "rootDir": "test",
+        "outDir": "test_js",
         "lib": ["ES2022"],
         "target": "ES2022",
-        "module": "Node16",
+        "module": "NodeNext",
 
         "forceConsistentCasingInFileNames": true,
         "skipLibCheck": true,
@@ -17,7 +17,7 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "strict": true,
-        "verbatimModuleSyntax": true
+        "verbatimModuleSyntax": false
     },
-    "include": ["lib/*.ts"]
+    "include": ["test/*.cts"]
 }

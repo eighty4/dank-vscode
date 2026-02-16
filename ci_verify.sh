@@ -62,5 +62,6 @@ fi
 
 # run through all the checks done for ci
 
+pnpm build:test && pnpm test
 pnpm build:release
 pnpm fmtcheck

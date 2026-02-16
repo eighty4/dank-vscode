@@ -1,4 +1,5 @@
+.vscode-test
 lib_js
 node_modules
+test_js
 *.vsix
-

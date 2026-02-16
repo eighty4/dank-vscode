@@ -1,8 +1,10 @@
 .github
 .vscode
+.vscode-test
 lib
 node_modules
 scripts
+test_js
 
 docs/**
 !docs/icon-256.png

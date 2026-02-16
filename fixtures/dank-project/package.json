@@ -1,0 +1,13 @@
+{
+    "name": "dank-n-eggs",
+    "version": "0.0.0",
+    "packageManager": "pnpm@10.29.3",
+    "type": "module",
+    "scripts": {
+        "build": "dank build",
+        "dev": "dank serve"
+    },
+    "devDependencies": {
+        "@eighty4/dank": "0.0.5"
+    }
+}

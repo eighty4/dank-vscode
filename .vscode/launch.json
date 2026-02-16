@@ -2,12 +2,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run Extension",
+            "name": "Run dank-vscode",
             "type": "extensionHost",
             "request": "launch",
             "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
             "outFiles": ["${workspaceFolder}/lib_js/**/*.js"],
-            "preLaunchTask": "${defaultBuildTask}"
+            "preLaunchTask": "build-extension"
+        },
+        {
+            "name": "Test dank-vscode",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+            "outFiles": [
+                "${workspaceFolder}/lib_js/**/*.js",
+                "${workspaceFolder}/test/test_js/**/*.js"
+            ],
+            "testConfiguration": "${workspaceFolder}/.vscode-test.js",
+            "preLaunchTask": "build-tests"
         }
     ]
 }

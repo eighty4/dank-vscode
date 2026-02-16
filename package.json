@@ -40,16 +40,21 @@
     },
     "main": "./lib_js/extension.js",
     "scripts": {
-        "build": "node esbuild.js",
-        "build:release": "tsc && node esbuild.js --production",
+        "build": "tsc && node esbuild.js",
+        "build:test": "pnpm build && tsc -p tsconfig.test.json",
+        "build:release": "pnpm build --production",
         "fmt": "prettier --write .",
         "fmtcheck": "prettier --check .",
+        "test": "vscode-test",
         "typecheck": "tsc",
         "vscode:prepublish": "pnpm build:release"
     },
     "devDependencies": {
+        "@types/mocha": "^10.0.10",
         "@types/node": "22.x",
         "@types/vscode": "^1.74.0",
+        "@vscode/test-cli": "^0.0.12",
+        "@vscode/test-electron": "^2.5.2",
         "esbuild": "^0.27.2",
         "prettier": "^3.7.4",
         "typescript": "^5.9.3"
