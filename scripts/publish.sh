@@ -2,6 +2,17 @@
 
 # login with `vsce login eighty4tech`
 
+vsce package
+
+echo
+read -p "Continue to publish? (y/n) " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Cancelling..."
+    exit 1
+fi
+
 TAG=$(npm version patch --no-git-tag-version)
 
 npx -y @eighty4/changelog rollover "$TAG"

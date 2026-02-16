@@ -1,9 +1,11 @@
 .github
 .vscode
 .vscode-test
+fixtures
 lib
 node_modules
 scripts
+test
 test_js
 
 docs/**
