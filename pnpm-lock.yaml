@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      semver:
+        specifier: ^7.7.4
+        version: 7.7.4
     devDependencies:
       '@types/mocha':
         specifier: ^10.0.10
@@ -14,6 +18,9 @@ importers:
       '@types/node':
         specifier: 22.x
         version: 22.19.6
+      '@types/semver':
+        specifier: ^7.7.1
+        version: 7.7.1
       '@types/vscode':
         specifier: ^1.74.0
         version: 1.108.1
@@ -237,6 +244,9 @@ packages:
 
   '@types/node@22.19.6':
     resolution: {integrity: sha512-qm+G8HuG6hOHQigsi7VGuLjUVu6TtBo/F05zvX04Mw2uCg9Dv0Qxy3Qw7j41SidlTcl5D/5yg0SEZqOB+EqZnQ==}
+
+  '@types/semver@7.7.1':
+    resolution: {integrity: sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA==}
 
   '@types/vscode@1.108.1':
     resolution: {integrity: sha512-DerV0BbSzt87TbrqmZ7lRDIYaMiqvP8tmJTzW2p49ZBVtGUnGAu2RGQd1Wv4XMzEVUpaHbsemVM5nfuQJj7H6w==}
@@ -901,6 +911,8 @@ snapshots:
   '@types/node@22.19.6':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/semver@7.7.1': {}
 
   '@types/vscode@1.108.1': {}
 

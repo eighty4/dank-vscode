@@ -14,7 +14,7 @@ function fixtureUri(
     return vscode.Uri.file(
         join(
             __dirname,
-            `../fixtures/dank-project/pages/jsDefinitions/${filename}.ts`,
+            `../../fixtures/dank-project/pages/jsDefinitions/${filename}.ts`,
         ),
     )
 }
@@ -71,6 +71,10 @@ suite('JavaScriptDefinitionProvider', () => {
                 assert.equal(
                     definitions[0].targetUri.fsPath,
                     fixtureUri('worker').fsPath,
+                )
+                await vscode.commands.executeCommand(
+                    'DANK.checkDependency',
+                    '0.0.4',
                 )
             })
 

@@ -36,7 +36,13 @@
         "workspaceContains:**/dank.config.{js,ts}"
     ],
     "contributes": {
-        "commands": []
+        "commands": [
+            {
+                "command": "DANK.checkDependency",
+                "title": "Check DANK dependency",
+                "category": "DANK"
+            }
+        ]
     },
     "main": "./lib_js/extension.js",
     "scripts": {
@@ -52,11 +58,15 @@
     "devDependencies": {
         "@types/mocha": "^10.0.10",
         "@types/node": "22.x",
+        "@types/semver": "^7.7.1",
         "@types/vscode": "^1.74.0",
         "@vscode/test-cli": "^0.0.12",
         "@vscode/test-electron": "^2.5.2",
         "esbuild": "^0.27.2",
         "prettier": "^3.7.4",
         "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "semver": "^7.7.4"
     }
 }
