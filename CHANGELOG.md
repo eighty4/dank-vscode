@@ -4,6 +4,10 @@
 
 - ???
 
+## [v0.0.5] - 2026-03-21
+
+- ???
+
 ## [v0.0.4] - 2026-02-16
 
 - `Go To Definition` support for Worker and SharedWorker URLs
@@ -26,7 +30,8 @@
 
 - `Go To Definition` support for HTML partial paths to quickly navigate between HTML files
 
-[Unreleased]: https://github.com/eighty4/dank-vscode/compare/v0.0.4...HEAD
+[Unreleased]: https://github.com/eighty4/dank-vscode/compare/v0.0.5...HEAD
+[v0.0.5]: https://github.com/eighty4/dank-vscode/compare/v0.0.4...v0.0.5
 [v0.0.4]: https://github.com/eighty4/dank-vscode/compare/v0.0.3...v0.0.4
 [v0.0.3]: https://github.com/eighty4/dank-vscode/compare/v0.0.2...v0.0.3
 [v0.0.2]: https://github.com/eighty4/dank-vscode/compare/v0.0.1...v0.0.2
