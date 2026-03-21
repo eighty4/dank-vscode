@@ -7,7 +7,10 @@ suite('HtmlDefinitionProvider', () => {
         suite('resolves', () => {
             test('partial path to uri', async () => {
                 const dankHtmlUri = vscode.Uri.file(
-                    join(__dirname, '../fixtures/dank-project/pages/dank.html'),
+                    join(
+                        __dirname,
+                        '../../fixtures/dank-project/pages/dank.html',
+                    ),
                 )
                 const doc = await vscode.workspace.openTextDocument(dankHtmlUri)
                 const partialPathRegex = /<!--\s+{{\s+(?<pp>.*)\s+}}-->/d
@@ -30,7 +33,7 @@ suite('HtmlDefinitionProvider', () => {
                     vscode.Uri.file(
                         join(
                             __dirname,
-                            '../fixtures/dank-project/pages/partial.html',
+                            '../../fixtures/dank-project/pages/partial.html',
                         ),
                     ).fsPath,
                 )
@@ -38,7 +41,10 @@ suite('HtmlDefinitionProvider', () => {
 
             test('partial path string as an entire word', async () => {
                 const dankHtmlUri = vscode.Uri.file(
-                    join(__dirname, '../fixtures/dank-project/pages/dank.html'),
+                    join(
+                        __dirname,
+                        '../../fixtures/dank-project/pages/dank.html',
+                    ),
                 )
                 const doc = await vscode.workspace.openTextDocument(dankHtmlUri)
                 const partialPathRegex = /<!--\s+{{\s+(?<pp>.*)\s+}}-->/d

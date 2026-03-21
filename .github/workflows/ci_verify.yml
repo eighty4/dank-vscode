@@ -18,36 +18,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
-      - run: pnpm i
-      - run: pnpm build:release
+      - run: npm i
+      - run: npm run build:release
 
   fmt:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
-      - run: pnpm i
-      - run: pnpm fmtcheck
+      - run: npm i
+      - run: npm run fmtcheck
 
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
       - run: sudo apt-get install xvfb -y
-      - run: pnpm i
-      - run: pnpm build:test
-      - run: xvfb-run -a pnpm test
+      - run: npm i
+      - run: npm run build:test
+      - run: xvfb-run -a npm run test

@@ -19,5 +19,5 @@
         "strict": true,
         "verbatimModuleSyntax": false
     },
-    "include": ["test/*.cts"]
+    "include": ["test/**/*.cts"]
 }

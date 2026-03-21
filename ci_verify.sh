@@ -23,11 +23,6 @@ done
 
 # validate pnpm is installed
 
-if ! command -v "pnpm" &> /dev/null; then
-  _url="https://pnpm.io/installation"
-  echo "\033[31merror:\033[0m pnpm is required for contributing\n\n  $_url\n"
-fi
-
 if ! command -v "model-t" &> /dev/null; then
   _url="https://github.com/eighty4/model-t"
   echo "\033[31merror:\033[0m model-t is required for validating GitHub Actions workflows\n\n  $_url\n"
@@ -62,6 +57,7 @@ fi
 
 # run through all the checks done for ci
 
-pnpm build:test && pnpm test
-pnpm build:release
-pnpm fmtcheck
+npm run build:test && pnpm test
+npm run build:release
+npm run fmtcheck
+

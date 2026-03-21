@@ -17,7 +17,8 @@ lib_js/*.map
 !CHANGELOG.md
 
 .gitignore
+.vscode-test.js
 ci_verify.sh
 esbuild.js
-pnpm-lock.yaml
 tsconfig.json
+tsconfig.test.json
