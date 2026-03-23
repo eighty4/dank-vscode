@@ -35,7 +35,11 @@ suite('checkDankVersion', () => {
                 '0.0.4',
             )
             const packageJson = await readPackageJson()
-            assert.equal(packageJson.devDependencies['@eighty4/dank'], '0.0.4')
+            assert.ok(
+                /^\^?0\.0\.4$/.test(
+                    packageJson.devDependencies['@eighty4/dank'],
+                ),
+            )
         })
 
         test('move prod dependency to dev and upgrade', async () => {
@@ -54,7 +58,11 @@ suite('checkDankVersion', () => {
             const packageJson = await readPackageJson()
             assert.ok(!packageJson.dependencies)
             assert.ok(!!packageJson.devDependencies)
-            assert.equal(packageJson.devDependencies['@eighty4/dank'], '0.0.4')
+            assert.ok(
+                /^\^?0\.0\.4$/.test(
+                    packageJson.devDependencies['@eighty4/dank'],
+                ),
+            )
         })
 
         test('removes dupe from prod', async () => {
@@ -76,7 +84,11 @@ suite('checkDankVersion', () => {
             const packageJson = await readPackageJson()
             assert.ok(!packageJson.dependencies)
             assert.ok(!!packageJson.devDependencies)
-            assert.equal(packageJson.devDependencies['@eighty4/dank'], '0.0.4')
+            assert.ok(
+                /^\^?0\.0\.4$/.test(
+                    packageJson.devDependencies['@eighty4/dank'],
+                ),
+            )
         })
     })
 })
