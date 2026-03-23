@@ -46,13 +46,13 @@
     "main": "./lib_js/extension.js",
     "scripts": {
         "build": "tsc && node esbuild.js",
-        "build:test": "pnpm build && tsc -p tsconfig.test.json",
-        "build:release": "pnpm build --production",
+        "build:test": "npm run build && tsc -p tsconfig.test.json",
+        "build:release": "npm run build --production",
         "fmt": "prettier --write .",
         "fmtcheck": "prettier --check .",
         "test": "vscode-test",
         "typecheck": "tsc",
-        "vscode:prepublish": "pnpm build:release"
+        "vscode:prepublish": "npm run build:release"
     },
     "dependencies": {
         "semver": "^7.7.4"
