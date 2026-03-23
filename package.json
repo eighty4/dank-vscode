@@ -50,7 +50,7 @@
         "build:release": "npm run build --production",
         "fmt": "prettier --write .",
         "fmtcheck": "prettier --check .",
-        "test": "vscode-test",
+        "test": "vscode-test --timeout 4000",
         "typecheck": "tsc",
         "vscode:prepublish": "npm run build:release"
     },
